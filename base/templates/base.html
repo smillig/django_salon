@@ -90,7 +90,7 @@
                         <a href="{#% url '404' %#}" class="dropdown-item">Sign </a>
                     </div>
                 </div>
-                <a href="{#% url 'contact.html' %#}" class="nav-item nav-link">Contact</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
             </div>
             <div class=" d-none d-lg-flex">
                 <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
@@ -104,7 +104,16 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
+    
+    {% block header %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center pt-5 pb-3">
+            <h1 class="display-4 text-white animated slideInDown mb-3">{% block page_title %}{% endblock %}</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    {% endblock %}
 
     <!-- Carousel Start -->
     {% block content %}

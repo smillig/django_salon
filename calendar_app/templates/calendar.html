@@ -1,24 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block page_title %}Calendar{% endblock %}
 {% block content %}
-    <link rel='stylesheet' type='text/css' href="{% static 'css/fullcalendar.min.css' %}" />
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.01s">
-        <div class="container text-center pt-5 pb-3">
-            <h1 class="display-4 text-white animated slideInDown mb-3">Calendar</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-primary active" aria-current="page">Calendar</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
     <!-- About Start -->
+    <link rel='stylesheet' type='text/css' href="{% static 'css/fullcalendar.min.css' %}" />
     <div class="container-xxl py-6">
         <div class="container">
             <div class="row g-5">
