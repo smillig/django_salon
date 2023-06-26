@@ -35,3 +35,11 @@ class CalendarAppUnitTestCase(TestCase):
     def test_can_get_all_events(self):
         response = self.client.get('/all_events/')
         self.assertEqual(response.json()[0]['title'], 'test event')
+
+    def test_can_get_login_page(self):
+        response = self.client.get('/login/')
+        self.assertTemplateUsed(response, 'registration/login.html')
+
+    def test_can_get_signup_page(self):
+        response = self.client.get('/signup/')
+        self.assertTemplateUsed(response, 'registration/signup.html')

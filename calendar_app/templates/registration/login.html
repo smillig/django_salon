@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}Log In{% endblock %}
+{% block content %}
+<div class="container-xxl py-6">
+    <div class="container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="row g-3">
+                {{form.as_div}}
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

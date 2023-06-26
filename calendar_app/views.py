@@ -1,22 +1,35 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse
-from .models import Calendar, Event
+from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView, UpdateView
+from .models import Event, CalendarUser
+from .forms import CalendarUserCreationForm, CalendarUserLoginForm
 
-# Create your views here.
+class SignUpView(CreateView):
+    form_class = CalendarUserCreationForm
+    success_url = reverse_lazy("calendar")
+    template_name = "registration/signup.html"
+    
+
+def login(request):
+    if request.method == "POST":
+        login_form = CalendarUserLoginForm(request.POST)
+        if login_form.is_valid():
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user_model = CalendarUser.objects.get(username=username)
+            if user_model.check_password(password):
+                login(request, user_model)
+                return redirect(reverse_lazy('calendar'))
+        else:
+            form = CalendarUserLoginForm(request.POST)
+            return render(request, 'registration/login.html', {'form': form, 'errors': login_form.errors})
+    else:
+        form = CalendarUserLoginForm()
+        return render(request, 'registration/login.html', {'form': form})
+
 def view_calendar(request):
-    # Retrieve the calendar object from the database
-    # calendar = Calendar.objects.get(location='default')
-    # eventList = Event.objects.all()
     return render(request, 'calendar.html')
-
-def calendar(request):
-    all_events = Event.objects.all()
-    calendar = Calendar.objects.get(location='default')
-    context = {
-        "calendar": calendar,
-        "events": all_events,
-    }
-    return render(request,'calendar.html', context)
 
 def all_events(request):                                                                                                 
     all_events = Event.objects.all()                                                                                    
@@ -29,4 +42,4 @@ def all_events(request):
             'end': event.end.strftime("%m/%d/%Y, %H:%M:%S"),                                                             
         })                                                                                                               
                                                                                                                      
-    return JsonResponse(out, safe=False)  
+    return JsonResponse(out, safe=False)
