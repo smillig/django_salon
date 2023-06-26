@@ -27,3 +27,11 @@ class CalendarAppUnitTestCase(TestCase):
         test_event = Event.objects.get(id=1)
         event_label = test_event.name
         self.assertEqual(event_label, 'test event')
+
+    def test_can_get_calendar(self):
+        response = self.client.get('/calendar/')
+        self.assertTemplateUsed(response, 'calendar.html')
+
+    def test_can_get_all_events(self):
+        response = self.client.get('/all_events/')
+        self.assertEqual(response.json()[0]['title'], 'test event')
