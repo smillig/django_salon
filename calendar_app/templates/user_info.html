@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% block page_title %}{% translate "Member Information" %}{% endblock %}
+{% block content %}
+<div class="container-xl py-4">
+    <div class="container">
+        <p>
+            {% if user.is_authenticated %}
+            {% translate "Hi" %} {{ user.first_name }}!
+            <p><a href="{% url 'logout' %}">{% translate "Log Out" %}</a></p>
+            <h3>{% translate "Your Info: " %}</h3>
+            <p>
+                <ul>
+                    <li>{% translate "First Name" %}: {{user.first_name}}</li>
+                    <li>{% translate "Last Name" %}: {{user.last_name}}</li>
+                    <li>{% translate "Username" %}: {{user.username}}</li>
+                    <li>{% translate "Email" %}: {{user.email}}</li>
+                    <li>{% translate "Phone Number" %}: {{user.phone_num}}</li>
+                    <li>{% translate "Gender" %}: {{user.gender}}</li>
+                    <li>{% translate "Address" %}: {{user.address}}</li>
+                    <li>{% translate "Date of Birth" %}: {{user.date_of_birth}}</li>
+                </ul>
+            </p>
+            {% else %}
+            <p>{% translate "You are not logged in" %}</p>
+            <a href="{% url 'login' %}">{% translate "Log In" %}</a> |
+            <a href="{% url 'signup' %}">{% translate "Sign Up" %}</a>
+            {% endif %}
+        </p>
+        {% if user.is_authenticated %}
+        <h3>{% translate "Update Info" %}</h3>
+        <p>{% blocktranslate %}If you'd like to change your information please fill out what you'd like to change below. Leave fields blank that you'd like to stay the same.{% endblocktranslate %}</p>
+        <form  method="post">
+            <div class="row g-3">
+                {% csrf_token %}
+                {{form.as_div}}
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">{% translate "Change Info" %}</button>
+            </div>            
+        </form>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

@@ -30,6 +30,8 @@ urlpatterns = [
     path('calendar/', calendar_views.view_calendar, name='calendar'),
     path('signup/', calendar_views.SignUpView.as_view(), name='signup'),
     path('login/', calendar_views.login, name='login'),
+    path('user_info/', calendar_views.user_info, name='user_info'),
+    path('auth/', include("django.contrib.auth.urls")),
     path('set_language/', set_language, name='set_language'),
     path('captcha/', include('captcha.urls')),
 ]

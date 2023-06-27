@@ -10,7 +10,7 @@ from .models import CalendarUser, Event
 # Custom user form for requested information from salon
 class CalendarUserCreationForm(UserCreationForm):
     GENDER_CHOICES = [
-        ("O", "---"),
+        ("-", "---"),
         ("M", gettext_lazy("Male")),
         ("F", gettext_lazy("Female")),
         ("O", gettext_lazy("Other"))
@@ -51,10 +51,39 @@ class CalendarUserLoginForm(AuthenticationForm):
 
 # TODO: Allow users to update information
 class CalendarUserChangeForm(UserChangeForm):
-
+    GENDER_CHOICES = [
+        ("-", "---"),
+        ("M", gettext_lazy("Male")),
+        ("F", gettext_lazy("Female")),
+        ("O", gettext_lazy("Other"))
+    ]
+    username = forms.CharField(label=gettext_lazy("Change Username"), max_length=150, required=False,\
+                               help_text=gettext_lazy("Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."),\
+                                widget=forms.TextInput(attrs={'class': "form-control", 'placeholder': ("Username")}))
+    first_name = forms.CharField(label=gettext_lazy("Change First Name"), max_length=100, required=False, \
+                                 widget=forms.TextInput(attrs={'class': "form-control", 'placeholder': ("First Name")}))
+    last_name = forms.CharField(label=gettext_lazy("Change Last Name"), required=False, max_length=100, \
+                                widget=forms.TextInput(attrs={'class': "form-control", 'placeholder': ("Last Name")}))
+    email = forms.EmailField(label=gettext_lazy("Change Email address"), required=False, \
+                             widget=forms.TextInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Email Address")}))
+    phone_num = forms.CharField(label=gettext_lazy("Change Phone Number"), required=False, max_length=13, \
+                                widget=forms.TextInput(attrs={'class': "form-control", 'placeholder':gettext_lazy ("Phone Number")}))
+    gender = forms.ChoiceField(label=gettext_lazy("Change Gender"), required=False, choices=GENDER_CHOICES, \
+                               widget=forms.Select(attrs={'class': "form-control", 'placeholder': gettext_lazy("Gender")}))
+    address = forms.CharField(label=gettext_lazy("Change Address"), required=False, \
+                              widget=forms.Textarea(attrs={'class': "form-control", 'placeholder': gettext_lazy("Address")}), max_length=255)
+    date_of_birth = forms.DateField(label=gettext_lazy("Change Date of Birth"), required=False, \
+                                    widget=forms.SelectDateWidget(years=range(datetime.date.today().year - 110, datetime.date.today().year), attrs={'class': "form-control"}))
+    password = forms.CharField(label=gettext_lazy("Current Password"), max_length=150, help_text=gettext_lazy("Please confirm password to update other information."),\
+                                widget=forms.PasswordInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Current Password")}))
+    new_password_1 = forms.CharField(label=gettext_lazy("Update Password"), max_length=150, required=False, \
+                                     help_text=gettext_lazy("To update password, enter new password here and confirm in next section."),\
+                                widget=forms.PasswordInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Update Password")}))
+    new_password_2 = forms.CharField(label=gettext_lazy("Confirm Update Password"), max_length=150, required=False,\
+                                widget=forms.PasswordInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Confirm Update Password")}))
     class Meta:
         model = CalendarUser
-        fields = ("username", "email")
+        fields = ("username", "first_name", "last_name", "email", "phone_num", "gender", "address", "date_of_birth", "password", "new_password_1", "new_password_2")
 
 
 

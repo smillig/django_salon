@@ -5,6 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class CalendarUser(AbstractUser):
     id = models.AutoField(primary_key=True)
     GENDER_CHOICES = [
+        ("-", "---"),
         ("M", "Male"),
         ("F", "Female"),
         ("O", "Other")

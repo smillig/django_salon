@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 08:33-0600\n"
+"POT-Creation-Date: 2023-06-27 17:19-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\base\templates\about.html:4 .\base\templates\about.html:22
-#: .\base\templates\base.html:158 .\base\templates\base.html:166
+#: .\base\templates\base.html:161 .\base\templates\base.html:169
 msgid "About Us"
 msgstr "Om oss"
 
@@ -89,77 +89,83 @@ msgstr "Medlemmar"
 #: .\base\templates\base.html:90
 #: .\calendar_app\templates\registration\login.html:4
 #: .\calendar_app\templates\registration\login.html:12
+#: .\calendar_app\templates\user_info.html:27
 msgid "Log In"
 msgstr "Logga in"
 
 #: .\base\templates\base.html:91
 #: .\calendar_app\templates\registration\signup.html:4
 #: .\calendar_app\templates\registration\signup.html:12
+#: .\calendar_app\templates\user_info.html:28
 msgid "Sign Up"
 msgstr "Bli Medlem"
 
-#: .\base\templates\base.html:94 .\base\templates\contact.html:4
+#: .\base\templates\base.html:93 .\calendar_app\templates\user_info.html:4
+msgid "Member Information"
+msgstr "Medlemsinformation"
+
+#: .\base\templates\base.html:97 .\base\templates\contact.html:4
 msgid "Contact"
 msgstr "Kontakt"
 
-#: .\base\templates\base.html:96
+#: .\base\templates\base.html:99
 msgid "Language"
 msgstr "Språk"
 
-#: .\base\templates\base.html:101
+#: .\base\templates\base.html:104
 msgid "English"
 msgstr "Engelska"
 
-#: .\base\templates\base.html:106
+#: .\base\templates\base.html:109
 msgid "Swedish"
 msgstr "Svenska"
 
-#: .\base\templates\base.html:116 .\base\templates\products.html:18
+#: .\base\templates\base.html:119 .\base\templates\products.html:18
 msgid "Call Us"
 msgstr "Ring oss"
 
-#: .\base\templates\base.html:145
+#: .\base\templates\base.html:148
 msgid "Office Address"
 msgstr "Kontorsadress"
 
-#: .\base\templates\base.html:157 .\base\templates\base.html:165
+#: .\base\templates\base.html:160 .\base\templates\base.html:168
 msgid "Quick Links"
 msgstr "Snabblänkar"
 
-#: .\base\templates\base.html:159 .\base\templates\base.html:167
+#: .\base\templates\base.html:162 .\base\templates\base.html:170
 #: .\base\templates\contact.html:10
 msgid "Contact Us"
 msgstr "Kontakta oss"
 
-#: .\base\templates\base.html:160 .\base\templates\base.html:168
+#: .\base\templates\base.html:163 .\base\templates\base.html:171
 msgid "Our Services"
 msgstr "Våra tjänster"
 
-#: .\base\templates\base.html:161 .\base\templates\base.html:169
+#: .\base\templates\base.html:164 .\base\templates\base.html:172
 msgid "Terms & Condition"
 msgstr "Villkor"
 
-#: .\base\templates\base.html:162 .\base\templates\base.html:170
+#: .\base\templates\base.html:165 .\base\templates\base.html:173
 msgid "Support"
 msgstr "Stöd"
 
-#: .\base\templates\base.html:173
+#: .\base\templates\base.html:176
 msgid "Photo Gallery"
 msgstr "Fotogalleri"
 
-#: .\base\templates\base.html:206
+#: .\base\templates\base.html:209
 msgid "Your Site Name"
 msgstr "Ditt webbplatsnamn"
 
-#: .\base\templates\base.html:206
+#: .\base\templates\base.html:209
 msgid "All Right Reserved."
 msgstr "Alla rättigheter förbehållna."
 
-#: .\base\templates\base.html:210
+#: .\base\templates\base.html:213
 msgid "Designed By"
 msgstr "Designad av"
 
-#: .\base\templates\base.html:211
+#: .\base\templates\base.html:214
 msgid "Distributed By: "
 msgstr "Levererad av: "
 
@@ -205,7 +211,8 @@ msgstr "Få stil med självförtroende"
 msgid ""
 "Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum."
 msgstr ""
-"Det är sant, elitren är bara den med loren. Det är en smärta, men låt det vara kronan på själva trädet."
+"Det är sant, elitren är bara den med loren. Det är en smärta, men låt det "
+"vara kronan på själva trädet."
 
 #: .\base\templates\home.html:30
 msgid "The Most Stylish Salon"
@@ -252,28 +259,29 @@ msgstr "Hårvolymsprodukter"
 msgid "Hair Styling Products"
 msgstr "Hårstylingprodukter"
 
-#: .\calendar_app\forms.py:14
+#: .\calendar_app\forms.py:14 .\calendar_app\forms.py:56
 msgid "Male"
 msgstr "Man"
 
-#: .\calendar_app\forms.py:15
+#: .\calendar_app\forms.py:15 .\calendar_app\forms.py:57
 msgid "Female"
 msgstr "Kvinna"
 
-#: .\calendar_app\forms.py:16
+#: .\calendar_app\forms.py:16 .\calendar_app\forms.py:58
 msgid "Other"
 msgstr "Övrig"
 
 #: .\calendar_app\forms.py:18 .\calendar_app\forms.py:42
-#: .\calendar_app\forms.py:43
+#: .\calendar_app\forms.py:43 .\calendar_app\templates\user_info.html:17
 msgid "Username"
 msgstr "Användarnamn"
 
-#: .\calendar_app\forms.py:19
+#: .\calendar_app\forms.py:19 .\calendar_app\forms.py:61
 msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
-msgstr "Nödvändig. 150 tecken eller färre. Endast bokstäver, siffror och @/./+/-/_."
+msgstr ""
+"Nödvändig. 150 tecken eller färre. Endast bokstäver, siffror och @/./+/-/_."
 
-#: .\calendar_app\forms.py:21
+#: .\calendar_app\forms.py:21 .\calendar_app\templates\user_info.html:15
 msgid "First Name"
 msgstr "Förnamn"
 
@@ -281,7 +289,7 @@ msgstr "Förnamn"
 msgid "Required"
 msgstr "Nödvändig"
 
-#: .\calendar_app\forms.py:22
+#: .\calendar_app\forms.py:22 .\calendar_app\templates\user_info.html:16
 msgid "Last Name"
 msgstr "Efternamn"
 
@@ -289,23 +297,26 @@ msgstr "Efternamn"
 msgid "Email address"
 msgstr "E-postadress"
 
-#: .\calendar_app\forms.py:23
+#: .\calendar_app\forms.py:23 .\calendar_app\forms.py:68
 msgid "Email Address"
 msgstr "E-postadress"
 
-#: .\calendar_app\forms.py:24
+#: .\calendar_app\forms.py:24 .\calendar_app\forms.py:70
+#: .\calendar_app\templates\user_info.html:19
 msgid "Phone Number"
 msgstr "Telefonnummer"
 
-#: .\calendar_app\forms.py:25
+#: .\calendar_app\forms.py:25 .\calendar_app\forms.py:72
+#: .\calendar_app\templates\user_info.html:20
 msgid "Gender"
 msgstr "Kön"
 
-#: .\calendar_app\forms.py:26
+#: .\calendar_app\forms.py:26 .\calendar_app\forms.py:74
+#: .\calendar_app\templates\user_info.html:21
 msgid "Address"
 msgstr "Adress"
 
-#: .\calendar_app\forms.py:27
+#: .\calendar_app\forms.py:27 .\calendar_app\templates\user_info.html:22
 msgid "Date of Birth"
 msgstr "Födelsedatum"
 
@@ -338,17 +349,108 @@ msgstr "Bekräfta lösenord"
 msgid "Enter the same password as before, for verification."
 msgstr "Ange samma lösenord som tidigare, för verifiering."
 
-#: .\calendar_app\forms.py:64
+#: .\calendar_app\forms.py:60
+msgid "Change Username"
+msgstr "Ändra Användarnamn"
+
+#: .\calendar_app\forms.py:63
+msgid "Change First Name"
+msgstr "Ändra Förnamn"
+
+#: .\calendar_app\forms.py:65
+msgid "Change Last Name"
+msgstr "Ändra Efternamn"
+
+#: .\calendar_app\forms.py:67
+msgid "Change Email address"
+msgstr "Ändra E-postadress"
+
+#: .\calendar_app\forms.py:69
+msgid "Change Phone Number"
+msgstr "Ändra Telefonnummer"
+
+#: .\calendar_app\forms.py:71
+msgid "Change Gender"
+msgstr "Ändra kön"
+
+#: .\calendar_app\forms.py:73
+msgid "Change Address"
+msgstr "Ändra adress"
+
+#: .\calendar_app\forms.py:75
+msgid "Change Date of Birth"
+msgstr "Ändra födelsedatum"
+
+#: .\calendar_app\forms.py:77 .\calendar_app\forms.py:78
+msgid "Current Password"
+msgstr "Nuvarande lösenord"
+
+#: .\calendar_app\forms.py:77
+msgid "Please confirm password to update other information."
+msgstr "Vänligen bekräfta lösenordet för att uppdatera annan information."
+
+#: .\calendar_app\forms.py:79 .\calendar_app\forms.py:81
+msgid "Update Password"
+msgstr "Uppdatera lösenord"
+
+#: .\calendar_app\forms.py:80
+msgid ""
+"To update password, enter new password here and confirm in next section."
+msgstr ""
+"För att uppdatera lösenordet, ange nytt lösenord här och bekräfta i nästa "
+"avsnitt."
+
+#: .\calendar_app\forms.py:82 .\calendar_app\forms.py:83
+msgid "Confirm Update Password"
+msgstr "Bekräfta Uppdatera lösenord"
+
+#: .\calendar_app\forms.py:93
 msgid "Appointment Name"
 msgstr "Utnämningsnamn"
 
-#: .\calendar_app\forms.py:65
+#: .\calendar_app\forms.py:94
 msgid "Start"
 msgstr "Början"
 
-#: .\calendar_app\forms.py:66
+#: .\calendar_app\forms.py:95
 msgid "End"
 msgstr "Slut"
+
+#: .\calendar_app\templates\user_info.html:10
+msgid "Hi"
+msgstr "Hej"
+
+#: .\calendar_app\templates\user_info.html:11
+msgid "Log Out"
+msgstr "Logga ut"
+
+#: .\calendar_app\templates\user_info.html:12
+msgid "Your Info: "
+msgstr "Din information: "
+
+#: .\calendar_app\templates\user_info.html:18
+msgid "Email"
+msgstr "E-post"
+
+#: .\calendar_app\templates\user_info.html:26
+msgid "You are not logged in"
+msgstr "Du är inte inloggad"
+
+#: .\calendar_app\templates\user_info.html:32
+msgid "Update Info"
+msgstr "Uppdatera information"
+
+#: .\calendar_app\templates\user_info.html:33
+msgid ""
+"If you'd like to change your information please fill out what you'd like to "
+"change below. Leave fields blank that you'd like to stay the same."
+msgstr ""
+"Om du vill ändra din information vänligen fyll i vad du villändra nedan. "
+"Lämna fält tomma som du vill förbli oförändrade."
+
+#: .\calendar_app\templates\user_info.html:38
+msgid "Change Info"
+msgstr "Ändra info"
 
 #~ msgid "Users"
 #~ msgstr "Användare"

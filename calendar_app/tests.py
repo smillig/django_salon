@@ -43,3 +43,7 @@ class CalendarAppUnitTestCase(TestCase):
     def test_can_get_signup_page(self):
         response = self.client.get('/signup/')
         self.assertTemplateUsed(response, 'registration/signup.html')
+
+    def test_can_get_user_info_page(self):
+        response = self.client.get('/user_info/')
+        self.assertTemplateUsed(response, 'user_info.html')
