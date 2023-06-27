@@ -1,45 +1,46 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
-{% block page_title %}Contact{% endblock %}
+{% block page_title %}{% translate "Contact" %}{% endblock %}
 {% block content %}
     <!-- Contact Start -->
     <div class="container-xxl py-6">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="text-primary text-uppercase mb-2">// Contact Us</p>
-                <h1 class="display-6 mb-4">If You Have Any Query, Please Contact Us</h1>
+                <p class="text-primary text-uppercase mb-2">// {% translate "Contact Us" %}</p>
+                <h1 class="display-6 mb-4">{% blocktranslate %}If You Have Any Query, Please Contact Us{% endblocktranslate %}</h1>
             </div>
             <div class="row g-0 justify-content-center">
                 <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="text-center mb-4">The contact form is currently inactive. It will be functional shortly.</p>
+                    <p class="text-center mb-4">{% blocktranslate %}The contact form is currently inactive. It will be functional shortly.{% endblocktranslate %}</p>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <label for="name">{% translate "Your Name" %}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <label for="email">{% translate "Your Email" %}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <label for="subject">{% translate "Subject" %}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message">{% translate "Message" %}</label>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">{% translate "Send Message" %}</button>
                             </div>
                         </div>
                     </form>

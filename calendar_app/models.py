@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-# Create your models here.
+# Custom user since more fields are needed
 class CalendarUser(AbstractUser):
     id = models.AutoField(primary_key=True)
     GENDER_CHOICES = [
@@ -21,6 +21,7 @@ class CalendarUser(AbstractUser):
         return self.username
 
 
+# Create calendar object 
 class Calendar(models.Model):
     id = models.AutoField(primary_key=True)
     location = models.CharField(max_length=128)
@@ -29,6 +30,7 @@ class Calendar(models.Model):
         return self.location
 
 
+# Create Events to display on calendar
 class Event(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)

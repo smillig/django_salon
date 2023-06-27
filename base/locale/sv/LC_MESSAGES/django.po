@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-27 08:33-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\base\templates\about.html:4 .\base\templates\about.html:22
+#: .\base\templates\base.html:158 .\base\templates\base.html:166
+msgid "About Us"
+msgstr "Om oss"
+
+#: .\base\templates\about.html:23
+msgid "Our style comes from the latest fashion."
+msgstr "Vår stil kommer från det senaste modet."
+
+#: .\base\templates\about.html:24 .\base\templates\about.html:25
+msgid ""
+"Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet "
+"diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo "
+"justo magna dolore erat amet"
+msgstr ""
+"Det var dags för en rebum vid klitan. Låt smärtan vara densamma. En dag "
+"kommer.Diam och dem. Clita var sig själv och världen och låt den vara, men "
+"låt världen vara de två världarna.det var bara mycket smärta"
+
+#: .\base\templates\about.html:28
+msgid "Quality Products"
+msgstr "Kvalitetsprodukter"
+
+#: .\base\templates\about.html:31
+msgid "Custom Products"
+msgstr "Anpassade produkter"
+
+#: .\base\templates\about.html:34
+msgid "Online Order"
+msgstr "Onlinebeställning"
+
+#: .\base\templates\about.html:37
+msgid "Home Delivery"
+msgstr "Hemleverans"
+
+#: .\base\templates\about.html:40 .\base\templates\home.html:18
+#: .\base\templates\home.html:33
+msgid "Read More"
+msgstr "Läs mer"
+
+#: .\base\templates\base.html:12 .\base\templates\base.html:76
+msgid "Your Salon"
+msgstr "Din salong"
+
+#: .\base\templates\base.html:53 .\base\templates\base.html:83
+msgid "Home"
+msgstr "Hem"
+
+#: .\base\templates\base.html:60
+msgid "Follow us:"
+msgstr "Följ oss:"
+
+#: .\base\templates\base.html:84
+msgid "About"
+msgstr "Om oss"
+
+#: .\base\templates\base.html:85 .\calendar_app\templates\calendar.html:4
+msgid "Calendar"
+msgstr "Kalender"
+
+#: .\base\templates\base.html:86 .\base\templates\products.html:4
+msgid "Products"
+msgstr "Produkter"
+
+#: .\base\templates\base.html:88
+msgid "Members"
+msgstr "Medlemmar"
+
+#: .\base\templates\base.html:90
+#: .\calendar_app\templates\registration\login.html:4
+#: .\calendar_app\templates\registration\login.html:12
+msgid "Log In"
+msgstr "Logga in"
+
+#: .\base\templates\base.html:91
+#: .\calendar_app\templates\registration\signup.html:4
+#: .\calendar_app\templates\registration\signup.html:12
+msgid "Sign Up"
+msgstr "Bli Medlem"
+
+#: .\base\templates\base.html:94 .\base\templates\contact.html:4
+msgid "Contact"
+msgstr "Kontakt"
+
+#: .\base\templates\base.html:96
+msgid "Language"
+msgstr "Språk"
+
+#: .\base\templates\base.html:101
+msgid "English"
+msgstr "Engelska"
+
+#: .\base\templates\base.html:106
+msgid "Swedish"
+msgstr "Svenska"
+
+#: .\base\templates\base.html:116 .\base\templates\products.html:18
+msgid "Call Us"
+msgstr "Ring oss"
+
+#: .\base\templates\base.html:145
+msgid "Office Address"
+msgstr "Kontorsadress"
+
+#: .\base\templates\base.html:157 .\base\templates\base.html:165
+msgid "Quick Links"
+msgstr "Snabblänkar"
+
+#: .\base\templates\base.html:159 .\base\templates\base.html:167
+#: .\base\templates\contact.html:10
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: .\base\templates\base.html:160 .\base\templates\base.html:168
+msgid "Our Services"
+msgstr "Våra tjänster"
+
+#: .\base\templates\base.html:161 .\base\templates\base.html:169
+msgid "Terms & Condition"
+msgstr "Villkor"
+
+#: .\base\templates\base.html:162 .\base\templates\base.html:170
+msgid "Support"
+msgstr "Stöd"
+
+#: .\base\templates\base.html:173
+msgid "Photo Gallery"
+msgstr "Fotogalleri"
+
+#: .\base\templates\base.html:206
+msgid "Your Site Name"
+msgstr "Ditt webbplatsnamn"
+
+#: .\base\templates\base.html:206
+msgid "All Right Reserved."
+msgstr "Alla rättigheter förbehållna."
+
+#: .\base\templates\base.html:210
+msgid "Designed By"
+msgstr "Designad av"
+
+#: .\base\templates\base.html:211
+msgid "Distributed By: "
+msgstr "Levererad av: "
+
+#: .\base\templates\contact.html:11
+msgid "If You Have Any Query, Please Contact Us"
+msgstr "Om du har några frågor, vänligen kontakta oss"
+
+#: .\base\templates\contact.html:15
+msgid "The contact form is currently inactive. It will be functional shortly."
+msgstr ""
+"Kontaktformuläret är för närvarande inaktivt. Den kommer att fungera inom "
+"kort."
+
+#: .\base\templates\contact.html:21
+msgid "Your Name"
+msgstr "Ditt namn"
+
+#: .\base\templates\contact.html:27
+msgid "Your Email"
+msgstr "Din email"
+
+#: .\base\templates\contact.html:33
+msgid "Subject"
+msgstr "Ämne"
+
+#: .\base\templates\contact.html:39
+msgid "Message"
+msgstr "Meddelande"
+
+#: .\base\templates\contact.html:43
+msgid "Send Message"
+msgstr "Skicka meddelande"
+
+#: .\base\templates\home.html:15
+msgid "The Modern Approach"
+msgstr "Det moderna tillvägagångssättet"
+
+#: .\base\templates\home.html:16
+msgid "Get Style With Confidence"
+msgstr "Få stil med självförtroende"
+
+#: .\base\templates\home.html:17 .\base\templates\home.html:32
+msgid ""
+"Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum."
+msgstr ""
+"Det är sant, elitren är bara den med loren. Det är en smärta, men låt det vara kronan på själva trädet."
+
+#: .\base\templates\home.html:30
+msgid "The Most Stylish Salon"
+msgstr "Den stiligaste salongen"
+
+#: .\base\templates\home.html:31
+msgid "We Style With Passion"
+msgstr "Vi stilar med passion"
+
+#: .\base\templates\products.html:12
+msgid "The Best Salon In Your City"
+msgstr "Den bästa salongen i din stad"
+
+#: .\base\templates\products.html:26
+msgid "Salon Products"
+msgstr "Salongsprodukter"
+
+#: .\base\templates\products.html:27
+msgid "Explore The Categories Of Our Salon Products"
+msgstr "Utforska kategorierna för våra salongsprodukter"
+
+#: .\base\templates\products.html:33 .\base\templates\products.html:48
+#: .\base\templates\products.html:63
+msgid "$11 - $99"
+msgstr "110:- genom 990:-"
+
+#: .\base\templates\products.html:34
+msgid "Hair Wash Products"
+msgstr "Hårtvättprodukter"
+
+#: .\base\templates\products.html:35 .\base\templates\products.html:50
+#: .\base\templates\products.html:65
+msgid ""
+"Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos"
+msgstr ""
+"Det var dags för rebumet, men själva smärtan av dagen, låt det bli en "
+"fantastisk dag och dem"
+
+#: .\base\templates\products.html:49
+msgid "Hair Volumizing Products"
+msgstr "Hårvolymsprodukter"
+
+#: .\base\templates\products.html:64
+msgid "Hair Styling Products"
+msgstr "Hårstylingprodukter"
+
+#: .\calendar_app\forms.py:14
+msgid "Male"
+msgstr "Man"
+
+#: .\calendar_app\forms.py:15
+msgid "Female"
+msgstr "Kvinna"
+
+#: .\calendar_app\forms.py:16
+msgid "Other"
+msgstr "Övrig"
+
+#: .\calendar_app\forms.py:18 .\calendar_app\forms.py:42
+#: .\calendar_app\forms.py:43
+msgid "Username"
+msgstr "Användarnamn"
+
+#: .\calendar_app\forms.py:19
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "Nödvändig. 150 tecken eller färre. Endast bokstäver, siffror och @/./+/-/_."
+
+#: .\calendar_app\forms.py:21
+msgid "First Name"
+msgstr "Förnamn"
+
+#: .\calendar_app\forms.py:21 .\calendar_app\forms.py:23
+msgid "Required"
+msgstr "Nödvändig"
+
+#: .\calendar_app\forms.py:22
+msgid "Last Name"
+msgstr "Efternamn"
+
+#: .\calendar_app\forms.py:23
+msgid "Email address"
+msgstr "E-postadress"
+
+#: .\calendar_app\forms.py:23
+msgid "Email Address"
+msgstr "E-postadress"
+
+#: .\calendar_app\forms.py:24
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#: .\calendar_app\forms.py:25
+msgid "Gender"
+msgstr "Kön"
+
+#: .\calendar_app\forms.py:26
+msgid "Address"
+msgstr "Adress"
+
+#: .\calendar_app\forms.py:27
+msgid "Date of Birth"
+msgstr "Födelsedatum"
+
+#: .\calendar_app\forms.py:29
+msgid "Captcha: Confirm you're not a robot."
+msgstr "Captcha: Bekräfta att du inte är en robot."
+
+#: .\calendar_app\forms.py:30 .\calendar_app\forms.py:44
+#: .\calendar_app\forms.py:45
+msgid "Password"
+msgstr "Lösenord"
+
+#: .\calendar_app\forms.py:30
+msgid ""
+"<ul><li>Your password can’t be too similar to your other personal "
+"information.</li><li>Your password must contain at least 8 characters.</"
+"li><li>Your password can’t be a commonly used password.</li><li>Your "
+"password can’t be entirely numeric.</li></ul>"
+msgstr ""
+"<ul><li>Ditt lösenord får inte vara för likt ditt andra "
+"personligainformation.</li><li>Ditt lösenord måste innehålla minst 8 tecken."
+"</li><li>Ditt lösenord kan inte vara ett vanligt använda lösenord.</"
+"li><li>Ditt lösenordet kan inte vara helt numeriskt.</li></ul>"
+
+#: .\calendar_app\forms.py:31
+msgid "Confirm Password"
+msgstr "Bekräfta lösenord"
+
+#: .\calendar_app\forms.py:31
+msgid "Enter the same password as before, for verification."
+msgstr "Ange samma lösenord som tidigare, för verifiering."
+
+#: .\calendar_app\forms.py:64
+msgid "Appointment Name"
+msgstr "Utnämningsnamn"
+
+#: .\calendar_app\forms.py:65
+msgid "Start"
+msgstr "Början"
+
+#: .\calendar_app\forms.py:66
+msgid "End"
+msgstr "Slut"
+
+#~ msgid "Users"
+#~ msgstr "Användare"

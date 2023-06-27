@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
-{% block page_title %}Calendar{% endblock %}
+{% block page_title %}{% translate "Calendar" %}{% endblock %}
 {% block content %}
     <!-- About Start -->
     <link rel='stylesheet' type='text/css' href="{% static 'css/fullcalendar.min.css' %}" />

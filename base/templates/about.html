@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
-{% block page_title %}About Us{% endblock %}
+{% block page_title %}{% translate "About Us" %}{% endblock %}
 {% block content %}
     <!-- About Start -->
     <div class="container-xxl py-6">
@@ -18,25 +19,25 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
-                        <p class="text-primary text-uppercase mb-2">// About Us</p>
-                        <h1 class="display-6 mb-4">Our style comes from the latest fashion.</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <p class="text-primary text-uppercase mb-2">// {% translate "About Us" %}</p>
+                        <h1 class="display-6 mb-4">{% blocktranslate %}Our style comes from the latest fashion.{% endblocktranslate %}</h1>
+                        <p>{% blocktranslate %}Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet{% endblocktranslate %}</p>
+                        <p>{% blocktranslate %}Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet{% endblocktranslate %}</p>
                         <div class="row g-2 mb-4">
                             <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Quality Products
+                                <i class="fa fa-check text-primary me-2"></i>{% translate "Quality Products" %}
                             </div>
                             <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Custom Products
+                                <i class="fa fa-check text-primary me-2"></i>{% translate "Custom Products" %}
                             </div>
                             <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Online Order
+                                <i class="fa fa-check text-primary me-2"></i>{% translate "Online Order" %}
                             </div>
                             <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Home Delivery
+                                <i class="fa fa-check text-primary me-2"></i>{% translate "Home Delivery" %}
                             </div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">{% translate "Read More" %}</a>
                     </div>
                 </div>
             </div>

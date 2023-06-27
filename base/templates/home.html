@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% load static %}
 {% block header %}
 {% endblock %}
@@ -11,10 +12,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
-                                <p class="text-primary text-uppercase fw-bold mb-2">// The Modern Approach</p>
-                                <h1 class="display-1 text-light mb-4 animated slideInDown">Get Style With Confidence</h1>
-                                <p class="text-light fs-5 mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum.</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                                <p class="text-primary text-uppercase fw-bold mb-2">// {% translate "The Modern Approach" %}</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">{% translate "Get Style With Confidence" %}</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">{% blocktranslate %}Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum.{% endblocktranslate %}</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">{% translate "Read More" %}</a>
                             </div>
                         </div>
                     </div>
@@ -26,10 +27,10 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-8">
-                                <p class="text-primary text-uppercase fw-bold mb-2">// The Most Stylish Salon</p>
-                                <h1 class="display-1 text-light mb-4 animated slideInDown">We Style With Passion</h1>
-                                <p class="text-light fs-5 mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum.</p>
-                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">Read More</a>
+                                <p class="text-primary text-uppercase fw-bold mb-2">// {% translate "The Most Stylish Salon" %}</p>
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">{% translate "We Style With Passion" %}</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">{% blocktranslate %}Vero elitr justo clita lorem. Ipsum dolor sed stet sit diam rebum ipsum.{% endblocktranslate %}</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5">{% translate "Read More" %}</a>
                             </div>
                         </div>
                     </div>
