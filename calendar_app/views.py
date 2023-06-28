@@ -1,5 +1,6 @@
 import datetime
 from django.shortcuts import render, redirect
+from django.contrib.auth import login as login_user
 from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
@@ -17,12 +18,13 @@ class SignUpView(CreateView):
 def login(request):
     if request.method == "POST":
         login_form = CalendarUserLoginForm(request.POST)
+        print(login_form.is_valid())
         if login_form.is_valid():
             username = request.POST.get('username')
             password = request.POST.get('password')
             user_model = CalendarUser.objects.get(username=username)
             if user_model.check_password(password):
-                login(request, user_model)
+                login_user(request, user_model)
                 return redirect(reverse_lazy('calendar'))
         else:
             form = CalendarUserLoginForm(request.POST)

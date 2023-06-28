@@ -58,6 +58,7 @@ MIDDLEWARE = [
 AUTH_USER_MODEL = 'calendar_app.CalendarUser'
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
+LOGIN_URL = '/login/'
 
 ROOT_URLCONF = 'django_salon.urls'
 

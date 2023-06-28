@@ -1,7 +1,7 @@
 import datetime
 from django import forms
 from django.utils.translation import gettext_lazy
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm, AuthenticationForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm, AuthenticationForm, UsernameField
 from captcha.fields import CaptchaField, CaptchaTextInput
 
 from .models import CalendarUser, Event
@@ -38,8 +38,8 @@ class CalendarUserCreationForm(UserCreationForm):
 
 
 # Custom login form so CSS "form-control" can keep style and look with theme
-class CalendarUserLoginForm(AuthenticationForm):
-    username = forms.CharField(label=gettext_lazy("Username"), max_length=150, \
+class CalendarUserLoginForm(forms.Form):
+    username = UsernameField(label=gettext_lazy("Username"), max_length=150, \
                                 widget=forms.TextInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Username")}))
     password = forms.CharField(label=gettext_lazy("Password"), max_length=150, \
                                 widget=forms.PasswordInput(attrs={'class': "form-control", 'placeholder': gettext_lazy("Password")}))

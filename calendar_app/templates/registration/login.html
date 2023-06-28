@@ -9,6 +9,7 @@
             <div class="row g-3"></div>
                 {% csrf_token %}
                 {{form.as_div}}
+                <br>
                 <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">{% translate "Log In" %}</button>
             </div>
         </form>
